@@ -1,0 +1,22 @@
+
+/* creating an empty content above the first icon so that
+it doesnt get hidden when navbar is fixed */
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* creating a media query for appearance of newsletter input btn on small screens */
+
+@media(min-width: 768px){
+    .news-input{
+        width: 50%;
+    }
+}
